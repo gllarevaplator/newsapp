@@ -1,0 +1,162 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span {
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+}
+
+p {
+  color: #6c6c6c;
+  font-weight: 300;
+  margin: 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  margin: 0;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title a {
+  border: none;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+select,
+button {
+  padding: 11px;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #1b1b1b;
+}
+
+@media only screen and (min-width: 768px) {
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 10px;
+  }
+}
+
+.card {
+  width: 100%;
+  background: #eef7ab;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 3px 15px #eef7ab;
+}
+
+.card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.news-content,
+.news-meta-data {
+  padding: 0px 15px;
+}
+
+.news-meta-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  margin: 15px 0 30px 0px;
+}
+
+.page {
+  background: #ddd;
+  cursor: pointer;
+  padding: 10px 25px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #000;
+  display: none;
+}
+
+.page:hover {
+  background: #b1b1b1;
+}
+
+footer {
+  position: unset;
+}
